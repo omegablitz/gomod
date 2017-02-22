@@ -1,4 +1,4 @@
-package gomod
+package main
 
 import "C"
 
@@ -6,3 +6,5 @@ import "C"
 func go_main() string {
     return "abc";
 }
+
+func main() {}
