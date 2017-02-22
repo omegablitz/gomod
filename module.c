@@ -18,7 +18,7 @@ void abort(void)
 static int hello_init(void)
 {
     printk(KERN_INFO "hello: init\n");
-    go_main();
+    go_main(10);
     return 0;
 }
 

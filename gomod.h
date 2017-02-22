@@ -52,7 +52,7 @@ extern "C" {
 #endif
 
 
-extern GoString go_main();
+extern GoString go_main(GoInt p0);
 
 #ifdef __cplusplus
 }

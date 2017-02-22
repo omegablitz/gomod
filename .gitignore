@@ -3,3 +3,9 @@
 .vagrant/
 *.out
 *.gch
+.mod.ko.cmd
+.tmp_versions/
+Module.symvers
+mod.ko
+mod.mod.c
+modules.order
