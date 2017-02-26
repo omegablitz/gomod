@@ -8,7 +8,7 @@ all: gomod.o
 gomod.o: gomod.go;
 	go build -buildmode=c-archive gomod.go
 clean:
-	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
 	rm gomod.h
+	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
 	rm gomod.h.gch
 
