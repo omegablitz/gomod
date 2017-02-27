@@ -10,3 +10,9 @@ mod.ko
 mod.mod.c
 modules.order
 *.a
+
+# go tool cgo
+gomod.h
+
+# tests
+only_one_goroutine
