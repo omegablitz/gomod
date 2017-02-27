@@ -1,5 +1,5 @@
 obj-m += mod.o
-mod-objs := module.o gomod.a
+mod-objs := module.o gomod.a runtime.o
 
 
 all: gomod.o
