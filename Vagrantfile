@@ -67,6 +67,8 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: <<-SHELL
     apt-get update
     apt-get install -y linux-headers-$(uname -r)
+    echo "gvm use go1.8 > /dev/null" >> /home/vagrant/.bashrc
+    echo "if [ -f ~/.bashrc ];then . ~/.bashrc;fi" >> /home/vagrant/.bash_profile
   SHELL
 
   config.vm.provision "golang", type: "shell", privileged: false do |s|
