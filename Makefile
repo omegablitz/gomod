@@ -15,9 +15,9 @@ clean:
 	-rm -f gomod.h.gch
 
 insmod:
-	sudo insmod "mod.ko"
+	-sudo insmod "mod.ko"
 	dmesg | tail
 
 rmmod:
-	sudo rmmod "mod"
+	-sudo rmmod "mod"
 	dmesg | tail
